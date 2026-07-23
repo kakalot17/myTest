@@ -29,12 +29,7 @@ jobs:
         uses: getzola/github-pages@v1
         with:
           zola_version: 'v0.22.0'
-      
-      - name: Upload Static Web Artifacts
-        uses: actions/upload-pages-artifact@v4
-        with:
-          path: ./public
-
+          
   deploy:
     environment:
       name: github-pages
