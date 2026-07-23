@@ -10,6 +10,9 @@ build_search_index = true
 theme = "ametrine"
 default_language = "en"
 [markdown]
-highlight_theme = "github-dark"
+
+[markdown.highlighting]
+theme = "github-dark"
+
 [extra]
 # Put all your custom variables here
