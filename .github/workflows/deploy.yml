@@ -28,7 +28,7 @@ jobs:
       - name: Build Zola Website
         uses: getzola/github-pages@v1
         with:
-          zola_version: '0.19.2' # Uses the stable modern version lock
+          zola_version: 'v0.22.0' # Uses the stable modern version lock
 
       - name: Upload Static Web Artifacts
         uses: actions/upload-pages-artifact@v3
