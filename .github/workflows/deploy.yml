@@ -23,7 +23,7 @@ jobs:
       - name: Checkout Source Code
         uses: actions/checkout@v4
         with:
-          submodules: true # Mandatory to pull the Ametrine submodule contents
+          submodules: recursive # Mandatory to pull the Ametrine submodule contents
 
       - name: Build Zola Website
         uses: getzola/github-pages@v1
