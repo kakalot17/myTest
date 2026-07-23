@@ -1,18 +1,17 @@
-# The URL the site will be built for
-base_url = "https://example.com"
+base_url = "https://github.io"
+title = "My Ametrine Site"
+theme = "ametrine"
 
-# Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
-
-# Whether to build a search index to be used later on by a JavaScript library
 build_search_index = true
 
-theme = "ametrine"
-default_language = "en"
 [markdown]
 
 [markdown.highlighting]
 theme = "github-dark"
 
 [extra]
-# Put all your custom variables here
+# Providing these standard definitions prevents the theme from hitting empty/null variable bugs
+author = "kakalot17"
+description = "A clean personal site built with Zola and Ametrine."
+avatar = ""
