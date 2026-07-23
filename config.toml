@@ -15,3 +15,8 @@ theme = "github-dark"
 author = "kakalot17"
 description = "A clean personal site built with Zola and Ametrine."
 avatar = ""
+
+[extra.nav]
+links = [
+    { name = "Home", url = "$BASE_URL/" },
+]
