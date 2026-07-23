@@ -3,7 +3,7 @@ name: Deploy Zola Site to GitHub Pages
 on:
   push:
     branches:
-      - main  # Change to master if your default branch is master
+      - main # Change to master if your default branch is master
 
 # Grant the permissions required to make a secure Pages deployment
 permissions:
@@ -31,7 +31,7 @@ jobs:
           zola_version: 'v0.22.0' # Uses the stable modern version lock
 
       - name: Upload Static Web Artifacts
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
           path: ./public
 
@@ -45,4 +45,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-
